@@ -1,0 +1,26 @@
+{
+    "name": "matrix-perf",
+    "version": "0.1.0",
+    "type": "module",
+    "description": "",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/AlexAbramov/matrix-perf"
+    },
+    "author": "Alex",
+    "license": "MIT",
+    "scripts": {
+        "serve": "node dist/server.js",
+        "watch-node": "nodemon dist/server.js",
+        "build": "tsc",
+        "watch": "tsc -w",
+        "debug": "npm run build && npm run watch-debug",
+        "serve-debug": "nodemon --inspect dist/server.js"
+    },
+    "dependencies": {},
+    "devDependencies": {
+        "@types/eslint": "^6.8.0",
+        "@types/node": "^13.13.0",
+        "eslint": "^6.8.0"
+    }
+}
